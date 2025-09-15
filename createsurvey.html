@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amita:wght@400;700&display=swap" rel="stylesheet">
+    <title>Create Survey</title>
+
+  </head>
+  <body>
+    <div class="dashboard">
+      <div class="nav">
+           <div class="menu-icon" id="menu-icon">
+    &#9776;
+  </div>
+
+
+  <div class="dropdown" id="dropdown">
+    <a href="index.html">Home</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="createsurvey.html">Create Survey</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="mysurvey.html">My Survey</a>
+  </div>
+        
+        <div class="col" id="logo">
+          <h2>Survey<strong>Craft</strong>
+          </h1>
+        </div>
+          <div class="col" id="navigation">
+            <a href="index.html" id="ahref">Home</a>
+          </div>
+          <div class="col"id="navigation">
+            <a href="dashboard.html" id="ahref" >Dashboard</a>
+          </div>
+          <div class="col"id="navigation">
+            <a href="createsurvey.html" id="ahref" class="active">Create Survey</a>
+          </div>
+          <div class="col"id="navigation">
+            <a href="mysurvey.html" id="ahref">My Survey</a>
+          </div>
+          <div class="col"id="navigation">
+            <a href="about.html" id="ahref"> About Us</a>
+          </div>
+          <div class="col"id="navigation">
+            <a href="contact.html" id="ahref"> Contact Us</a>
+          </div>
+           <div class="col">
+         <button id="openSettings" class="settings-btn">⚙️</button>
+ </div>
+ <div id="settingsSidebar" class="sidebar">
+    <div class="sidebar-header">
+      <h2>Account Settings</h2>
+      <button id="closeSettings" class="close-btn">&times;</button>
+    </div>
+
+    <!-- Main Menu -->
+    <ul id="mainMenu" class="settings-menu">
+      <li><a href="#" data-section="editProfile">Edit Profile</a></li>
+      <li><a href="#" data-section="changePassword">Change Password</a></li>
+      <li><a href="#" data-section="notifications">Notifications</a></li>
+      <li><a href="#" class="logout">Logout</a></li>
+    </ul>
+
+    <!-- Edit Profile Section -->
+    <div id="editProfile" class="settings-section hidden">
+      <button class="back-btn">← Back</button>
+      <h3>Edit Profile</h3>
+      <input type="text" placeholder="Full Name">
+      <input type="email" placeholder="Email Address">
+      <button class="save-btn">Save Changes</button>
+    </div>
+
+    <!-- Change Password Section -->
+    <div id="changePassword" class="settings-section hidden">
+      <button class="back-btn">← Back</button>
+      <h3>Change Password</h3>
+      <input type="password" placeholder="Old Password">
+      <input type="password" placeholder="New Password">
+      <input type="password" placeholder="Confirm Password">
+      <button class="save-btn">Update Password</button>
+    </div>
+
+    <!-- Notifications Section -->
+    <div id="notifications" class="settings-section hidden">
+      <button class="back-btn">← Back</button>
+      <h3>Notification Settings</h3>
+      <label><input type="checkbox"> Email Notifications</label>
+      <label><input type="checkbox"> Push Notifications</label>
+      <button class="save-btn">Save Preferences</button>
+    </div>
+  </div>
+
+  <!-- Logout Confirmation Popup -->
+  <div id="logoutConfirm" class="logout-popup hidden">
+    <p>Are you sure you want to log out?</p>
+    <button id="confirmLogout">Yes</button>
+    <button id="cancelLogout">No</button>
+  </div>
+    </div>   
+     </div>
+<div class="templates">
+        <div class="view-templates" data-survey="event">
+            <img src="event.jpeg" alt="">
+            <p class="cust">Event Survey</p>
+           <button 
+  class="create-btn" 
+  data-title="Event Feedback Survey" 
+  data-questions='[
+    {"question": "How would you rate the overall event?", "type": "radio", "options": ["Excellent", "Good", "Average", "Poor", "Very Poor"]},
+    {"question": "Were the event objectives clear?", "type": "radio", "options": ["Yes", "No"]},
+    {"question": "What could be improved?", "type": "text"}
+  ]'
+>
+  Create Now
+</button>
+        </div>
+        <div class="view-templates" data-survey="customer">
+            <img src="customer.jpeg" alt="">
+            <p class="cust">Customer Satisfaction Survey</p>
+           <button 
+  class="create-btn" 
+  data-title="Customer Satisfaction Survey" 
+  data-questions='[
+    {"question": "How satisfied are you with our product?", "type": "radio", "options": ["Very Satisfied", "Satisfied", "Neutral", "Dissatisfied", "Very Dissatisfied"]},
+    {"question": "What do you like most?", "type": "text"},
+    {"question": "What can we improve?", "type": "text"}
+  ]'
+> Create Now
+</button>
+        </div>
+        <div class="view-templates" data-survey="employee">
+            <img src="employment.png" alt="">
+            <p class="cust">Employee Engagement Survey</p>
+          <button 
+  class="create-btn" 
+  data-title="Employee Engagement Survey" 
+  data-questions='[
+    {"question": "How satisfied are you with your role?", "type": "radio", "options": ["Very Satisfied", "Satisfied", "Dissatisfied", "Very Dissatisfied"]},
+    {"question": "Do you feel valued?", "type": "radio", "options": ["Always", "Often","Rarely", "Never"]},
+    {"question": "What motivates you?", "type": "text"}
+  ]'
+>
+  Create Now
+</button>
+        </div>
+        <div class="view-templates" data-survey="market">
+            <img src="market.jpeg" alt="">
+            <p class="cust">Market Research Survey</p>
+            <button 
+  class="create-btn" 
+  data-title="Market Research Survey" 
+  data-questions='[
+    {"question": "How often do you purchase similar products?", "type": "radio", "options": ["Frequently", "Sometimes", "Rarely", "Never"]},
+    {"question": "What factors influence your purchasing decisions?", "type": "text"},
+    {"question": "What do you look for in a product?", "type": "text"},
+    {"question": "Where do you usually purchase these products?", "type": "radio", "options": ["Online", "Physical stores", "Both"]},
+    {"question": "What price range do you consider reasonable for this type of product?", "type": "text"},
+    {"question": "How do you learn about new products in this category?", "type": "radio", "options": ["Social media", "Friends/Family", "Advertisements", "In-store displays"]}
+  ]'
+>
+  Create Now
+</button>
+        </div>
+        <div class="view-templates" data-survey="product">
+            <img src="productt.png" alt="">
+            <p class="cust">
+              Product Feedback Survey</p>
+         <button 
+  class="create-btn" 
+  data-title="Product Feedback Survey" 
+  data-questions='[
+    {"question": "How often do you use our product?", "type": "radio", "options": ["Daily", "Weekly", "Monthly", "Rarely"]},
+    {"question": "Does the product meet your expectations?", "type": "radio", "options": ["Yes", "No"]},
+    {"question": "What features do you like most?", "type": "text"},
+    {"question": "What improvements would you suggest?", "type": "text"},
+    {"question": "How would you rate the product quality?", "type": "radio", "options": ["Excellent", "Good", "Average", "Poor"]},
+    {"question": "Would you recommend this product to others?", "type": "radio", "options": ["Yes", "No", "Maybe"]},
+    {"question": "How was your experience with customer support?", "type": "radio", "options": ["Very Satisfied", "Satisfied", "Neutral", "Dissatisfied", "Very Dissatisfied"]}
+  ]'
+>
+  Create Now
+</button>
+        </div>
+        <div class="view-templates" data-survey="training">
+            <img src="download.jpeg" alt="">
+            <p class="cust"> Training Program Survey</p>
+            <button 
+  class="create-btn" 
+  data-title="Training Program Survey" 
+  data-questions='[
+    {"question": "How would you rate the training program?", "type": "radio", "options": ["Excellent", "Good", "Average", "Poor"]},
+    {"question": "Were the training materials clear?", "type": "radio", "options": ["Yes", "No"]},
+    {"question": "What improvements do you suggest?", "type": "text"},
+    {"question": "Did the training help you improve your skills?", "type": "radio", "options": ["Yes", "No", "Somewhat"]},
+    {"question": "What topics would you like to see in future training sessions?", "type": "text"},
+    {"question": "How engaging was the trainer?", "type": "radio", "options": ["Very Engaging", "Somewhat Engaging", "Neutral", "Not Engaging"]}
+  ]'
+>
+  Create Now
+</button>
+        </div>
+    </div>
+
+   <div id="surveyModal" class="survey-modal">
+    <div class="survey-content">
+        <span id="closeModal" class="close-modal">&times;</span>
+        <h2 id="surveyTitle" class="survey-title"></h2>
+        <div id="surveyQuestions"></div>
+        <button id="addQuestion">Add Question</button>
+        <button id="saveSurvey">Save Survey</button>
+    </div>
+</div>
+
+    <a href="mysurvey.html" id="ahref">My Survey</a>
+ 
+
+
+
+
+
+
+ <footer>
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <div class=foo>
+            <a href="index.html" >Home</a>
+          </div>
+          <div class=foo>
+            <a href="dashboard.html"  >Dashboard</a>
+          </div>
+          <div class=foo>
+            <a href="createsurvey.html" class="active ">Create Survey </a>
+          </div>
+          <div class=foo>
+            <a href="mysurvey.html" >My Survey</a>
+          </div>
+          <div class=foo>
+            <a href="about.html" > About Us</a>
+          </div>
+          <div class=foo>
+            <a href="contact.html" > Contact Us</a>
+          </div>
+         
+       
+    </div>
+
+    <div class="footer-section">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook" style="color: #5643eb;"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter" style="color: #0a0b0b;"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram" style="color: #e35757;"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin" style="color: #175482;"></i></i></a>
+      </div>
+    </div>
+
+    <div class="footer-section" >
+      <h3>Stay Updated</h3>
+      <p>Subscribe to our newsletter for the latest updates.</p>
+      <input class="callto" type="email" placeholder="Enter your email">
+      <button class="call">Subscribe</button>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 SurveyCraft. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+
+<!-- FontAwesome for social icons -->
+<script src="https://kit.fontawesome.com/9f7fe64ab7.js" crossorigin="anonymous"></script>
+
+    </footer>
+    <script src="create.js"></script>
+     <script src="setting.js"></script>
+      <script src="menu.js"></script>
+      
+</body>
+</html>

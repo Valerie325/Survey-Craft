@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet"> -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="home-container">
+  
+
+    <div class="content">
+
+    <h1 class="head">Create Surveys In Minutes</h1>
+    <p class="subheading">"Design, customize, and share surveys <br>in minutes—perfect for feedback, research, and more."</p>
+
+    <button class="call-to-action" id="openModal">Get Started</button>
+    
+<div class="form-container" id="nameForm">
+  
+  <div class="form-box sign-up active">
+    <div class="img">
+      <img src="signup.png" alt="">
+    </div>
+
+    <div>
+      <span class="close" id="closeModal">x</span>
+      <h2>Sign Up</h2>
+      <p class="link">By signing up, you agree to the terms and conditions</p>
+      <form>
+        <input type="text" placeholder="Full Name" id="nameInput" required /><br>
+        <input type="email" placeholder="Email" required /><br>
+        <input type="password" placeholder="Password" required /><br>
+        <button type="submit" class="submit-button" id="signupBtn">Sign Up</button>
+      </form>
+      <p class="link">
+        Already have an account? <span class="switch-to-login">Log In</span>
+      </p>
+    </div>
+  </div>
+ 
+  <!-- Log In Form -->
+  <div class="form-box log-in">
+    <div class="log">
+    <div>
+      <span class="close" id="closeModal2">x</span>
+      <h2>Log In</h2>
+      <form>
+        <input type="text" placeholder=" Username" id="nameLog" required /><br>
+        <input type="password" placeholder="Password" required /><br>
+        <button type="submit" class="submit-button" id="loginBtn">Log In</button>
+      </form>
+      <p class="link">
+        Don't have an account? <span class="switch-to-signup">Sign Up</span>
+      </p>
+    </div>
+    <div class="img2">
+      <img src="login.png" alt="">
+    </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="index.js"></script>
+<script src="signup.js"></script>
+</body>
+</html>

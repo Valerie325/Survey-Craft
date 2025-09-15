@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href=" style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amita:wght@400;700&display=swap" rel="stylesheet">
+    <title>Dashboard</title>
+
+  </head>
+  <body>
+    <div class="dashboard">
+      <div class="nav">
+        <div class="menu-icon" id="menu-icon">
+    &#9776;
+  </div>
+
+
+  <div class="dropdown" id="dropdown">
+    <a href="index.html">Home</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="createsurvey.html">Create Survey</a>
+     <a href="mysurvey.html">My Survey</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact Us</a>
+   
+  </div>
+        <div class="col" id="logo">
+          <h2>Survey<strong>Craft</strong>
+          </h1>
+        </div>
+          <div class="col " id="navigation">
+            <a href="index.html" id="ahref">Home</a>
+          </div>
+          <div class="col" id="navigation">
+            <a href="dashboard.html" id="ahref" class="active">Dashboard</a>
+          </div>
+          <div class="col" id="navigation">
+            <a href="createsurvey.html" id="ahref">Create Survey</a>
+          </div>
+          <div class="col" id="navigation">
+            <a href="mysurvey.html" id="ahref">My Survey</a>
+          </div>
+          <div class="col" id="navigation">
+            <a href="about.html" id="ahref"> About</a>
+          </div>
+          <div class="col" id="navigation">
+            <a href="contact.html" id="ahref"> Contact Us</a>
+          </div>
+           <div class="col">
+         <button id="openSettings" class="settings-btn">⚙️</button>
+ </div>
+ <div id="settingsSidebar" class="sidebar">
+    <div class="sidebar-header">
+      <h2>Account Settings</h2>
+      <button id="closeSettings" class="close-btn">&times;</button>
+    </div>
+
+    <!-- Main Menu -->
+    <ul id="mainMenu" class="settings-menu">
+      <li><a href="#" data-section="editProfile">Edit Profile</a></li>
+      <li><a href="#" data-section="changePassword">Change Password</a></li>
+      <li><a href="#" data-section="notifications">Notifications</a></li>
+      <li><a href="#" class="logout">Logout</a></li>
+    </ul>
+
+    <!-- Edit Profile Section -->
+    <div id="editProfile" class="settings-section hidden">
+      <button class="back-btn">← Back</button>
+      <h3>Edit Profile</h3>
+      <input type="text" placeholder="Full Name">
+      <input type="email" placeholder="Email Address">
+      <button class="save-btn">Save Changes</button>
+    </div>
+
+    <!-- Change Password Section -->
+    <div id="changePassword" class="settings-section hidden">
+      <button class="back-btn">← Back</button>
+      <h3>Change Password</h3>
+      <input type="password" placeholder="Old Password">
+      <input type="password" placeholder="New Password">
+      <input type="password" placeholder="Confirm Password">
+      <button class="save-btn">Update Password</button>
+    </div>
+
+    <!-- Notifications Section -->
+    <div id="notifications" class="settings-section hidden">
+      <button class="back-btn">← Back</button>
+      <h3>Notification Settings</h3>
+      <label><input type="checkbox"> Email Notifications</label>
+      <label><input type="checkbox"> Push Notifications</label>
+      <button class="save-btn">Save Preferences</button>
+    </div>
+  </div>
+
+  <!-- Logout Confirmation Popup -->
+  <div id="logoutConfirm" class="logout-popup hidden">
+    <p>Are you sure you want to log out?</p>
+    <button id="confirmLogout">Yes</button>
+    <button id="cancelLogout">No</button>
+  </div>
+    </div>   
+    </div>
+<div id="conteng">
+      <div class="inner">
+
+        <h1 id="welcomeMessage" class="contentt"></h1>
+
+        
+      </div>
+      <div class="button-dash">
+        <div><button class="CTA"><a href="createsurvey.html" class="createsurvey">Create Survey</a></button></div>
+        <div><button class="CTA1"><a href="mysurvey.html" class="createsurvey">View Surveys</a></button></div>
+      </div>
+    
+     </div>
+
+<section class="faq-section">
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq-item">
+    <button class="faq-question">How do I create a survey? <span>+</span></button>
+    <div class="faq-answer">Go to the dashboard and click "Create Survey." Follow the prompts to add questions and publish your survey.</div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-question">How can I share my survey? <span>+</span></button>
+    <div class="faq-answer">After creating a survey, click the "Share" button to get a link or embed code.</div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-question">Where can I view my responses? <span>+</span></button>
+    <div class="faq-answer">Navigate to "My Surveys" and select your survey to view collected responses and analytics.</div>
+  </div>
+</section>
+
+
+
+
+
+
+   
+      <footer>
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <div class=foo>
+            <a href="index.html" >Home</a>
+          </div>
+          <div class=foo>
+            <a href="dashboard.html"  class="active">Dashboard</a>
+          </div>
+          <div class=foo>
+            <a href="createsurvey.html" >Create Survey</a>
+          </div>
+          <div class=foo>
+            <a href="mysurvey.html" >My Survey</a>
+          </div>
+          <div class=foo>
+            <a href="about.html" > About</a>
+          </div>
+          <div class=foo>
+            <a href="contact.html" > Contact Us</a>
+          </div>
+    
+       
+    </div>
+
+    <div class="footer-section">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-section" >
+      <h3>Stay Updated</h3>
+      <p>Subscribe to our newsletter for the latest updates.</p>
+      <input class="callto" type="email" placeholder="Enter your email">
+      <button class="call">Subscribe</button>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 SurveyCraft. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+
+<!-- FontAwesome for social icons -->
+<script src="https://kit.fontawesome.com/YOUR-KIT-ID.js" crossorigin="anonymous"></script>
+
+    </footer>
+    <script src="dashboard.js"></script>
+    <script src="setting.js"></script>
+    <script src="menu.js"></script>
+  </body>
+</html>
